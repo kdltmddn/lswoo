@@ -1,6 +1,5 @@
 #우리서로사랑하지는말자
-![기리보이]
-(https://image.bugsm.co.kr/album/images/500/9968/996863.jpg)
+![기리보이](https://image.bugsm.co.kr/album/images/500/9968/996863.jpg)
 
 * __가수__ : 기리보이
 * __발매시기__ : 2020.10.04
