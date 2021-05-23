@@ -1,5 +1,12 @@
-for i in range(5):
-    print(" " * (5 - i) + "*" * (2 * i - 1))
+import turtle as t
 
-for j in range(5, 0, -1): #5 4 3 2 1
-    print(" " * (5 - j) + "*" * (2 * j - 1))
+with open('turtle.txt', 'r') as f:
+    lines = f.readlines()
+    values = list(map(int, lines))
+
+t.shape('turtle')
+n = len(values)
+
+for i in range(0, n - 1, 1):
+    t.forward(values[i])
+    t.left(values[i+1])
