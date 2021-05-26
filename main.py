@@ -1,12 +1,7 @@
-import turtle as t
+line = int(input("다이아몬드 상부 줄 수 : "))
 
-with open('turtle.txt', 'r') as f:
-    lines = f.readlines()
-    values = list(map(int, lines))
+for x in range(1, line):
+    print(" " * (line - x) + "*" * (2 * x - 1))
 
-t.shape('turtle')
-n = len(values)
-
-for i in range(0, n - 1, 1):
-    t.forward(values[i])
-    t.left(values[i+1])
+for y in range(line, 0, -1):
+    print(" " * (line - y) + "*" * (2 * y - 1)
