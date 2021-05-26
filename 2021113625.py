@@ -1,5 +1,13 @@
-num = 0
-while num < 3:
-    print(f'이상해씨가 {num}일째 씨 뿌리는 중')
-    num = num + 1
-    print("다 심었다!")
+import turtle as t
+
+with open('turtle.txt', 'r') as f:
+    lines = f.readlines()
+    values = list(map(int, lines))
+
+t.shape('turtle')
+n = len(values)
+for i in range(0,n-1,2):
+    t.forward(values[i])
+    t.right(values[i+1])
+
+t.done()
